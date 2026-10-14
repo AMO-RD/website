@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" role="img" aria-labelledby="title">
+<title id="title">AMO</title>
+<rect width="800" height="800" fill="#F3F2F7"/>
+<g transform="translate(168 237.45)">
+<path d="M47.29 162.55C220.56 162.55 203.22 35.46 428.54 35.46" fill="none" stroke="#15132D" stroke-width="27.45" stroke-linecap="round"/>
+<path d="M47.29 162.55L428.54 162.55" fill="none" stroke="#15132D" stroke-width="27.45" stroke-linecap="round"/>
+<path d="M47.29 162.55C220.56 162.55 203.22 289.63 428.54 289.63" fill="none" stroke="#C4174F" stroke-width="27.45" stroke-linecap="round"/>
+<circle cx="47.29" cy="162.55" r="47.29" fill="#15132D"/>
+<circle cx="428.54" cy="35.46" r="35.46" fill="#15132D"/>
+<circle cx="428.54" cy="162.55" r="35.46" fill="#15132D"/>
+<circle cx="428.54" cy="289.63" r="35.46" fill="#C4174F"/>
+</g>
+</svg>

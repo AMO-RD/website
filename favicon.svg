@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+<style>.k{fill:#15132D}.kl,.al{fill:none;stroke-width:27.45;stroke-linecap:round}.kl{stroke:#15132D}.a{fill:#C4174F}.al{stroke:#C4174F}@media(prefers-color-scheme:dark){.k{fill:#EDECF6}.kl{stroke:#EDECF6}.a{fill:#FF6D9D}.al{stroke:#FF6D9D}}</style>
+<g transform="translate(8 24.76) scale(0.24)">
+<path class="kl" d="M47.29 162.55C220.56 162.55 203.22 35.46 428.54 35.46"/>
+<path class="kl" d="M47.29 162.55L428.54 162.55"/>
+<path class="al" d="M47.29 162.55C220.56 162.55 203.22 289.63 428.54 289.63"/>
+<circle class="k" cx="47.29" cy="162.55" r="47.29"/>
+<circle class="k" cx="428.54" cy="35.46" r="35.46"/>
+<circle class="k" cx="428.54" cy="162.55" r="35.46"/>
+<circle class="a" cx="428.54" cy="289.63" r="35.46"/>
+</g>
+</svg>
