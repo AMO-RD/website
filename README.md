@@ -38,4 +38,5 @@ All paths in the site are relative, so it works at `https://<user>.github.io/<re
 - **Colours**: change the token values in `:root` (light) and in the two dark blocks in `css/style.css`. The three highlight colours of the hero figure are `--path-1`, `--path-2` and `--path-3`.
 - **Fonts**: Archivo, Source Serif 4 and IBM Plex Mono load from Google Fonts through the `<link>` in `index.html`. To self-host, replace that link with `@font-face` rules in `css/style.css`.
 - **Social preview**: once the site has a domain, uncomment the `og:image` tag in `index.html` and set it to the absolute address of `img/og-image.png`.
-- **Contact**: the Contact section currently points to the founders' LinkedIn profiles. Add a company email there when you have one.
+- **Copyright year**: the footer shows the visitor's current year, set by `js/main.js`; the `2026` in `index.html` is only the fallback shown when scripts are off.
+- **Contact**: `info@amord.ca` appears in the Contact section (with a copy button) and in the footer of `index.html`; `michael@amord.ca` and `angela@amord.ca` sit under each person in the Contact section. If an address changes, update the link text and the `href` (and, for the general address, the copy button's `data-copy` attribute).

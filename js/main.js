@@ -158,3 +158,47 @@
   draw();
   play();
 })();
+
+/* Copyright year: the markup carries the launch year as a fallback; this keeps it current. */
+(function () {
+  var el = document.getElementById('year');
+  if (el) el.textContent = String(new Date().getFullYear());
+})();
+
+/* Copy button for the email address. If the clipboard is refused, the address is selected instead. */
+(function () {
+  var btn = document.getElementById('copy-email');
+  if (!btn) return;
+  var link = document.querySelector('.email__link');
+  var status = document.getElementById('copy-status');
+  var timer = 0;
+  function show(label, note, ok) {
+    btn.textContent = label;
+    if (ok) btn.setAttribute('data-done', ''); else btn.removeAttribute('data-done');
+    if (status) status.textContent = note;
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      btn.textContent = 'Copy';
+      btn.removeAttribute('data-done');
+      if (status) status.textContent = '';
+    }, 2200);
+  }
+  function select() {
+    if (!link || !window.getSelection) return;
+    var range = document.createRange();
+    range.selectNodeContents(link);
+    var sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+  }
+  btn.addEventListener('click', function () {
+    var text = btn.getAttribute('data-copy');
+    var write = navigator.clipboard && navigator.clipboard.writeText ? navigator.clipboard.writeText(text) : Promise.reject(new Error('no clipboard'));
+    write.then(function () {
+      show('Copied', 'Email address copied.', true);
+    }, function () {
+      select();
+      show('Address selected', 'Copying was blocked. The address is selected, so you can copy it yourself.', false);
+    });
+  });
+})();

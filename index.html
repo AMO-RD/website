@@ -221,17 +221,28 @@
         <p class="label">Contact</p>
         <h2 id="contact-title">Tell us what you are building.</h2>
         <p class="intro">We work with institutions, product teams, and researchers who need software that adapts to the people using it.</p>
+        <p class="email">
+          <a class="email__link" href="mailto:info@amord.ca">info@amord.ca</a>
+          <button type="button" class="email__copy" id="copy-email" data-copy="info@amord.ca" aria-label="Copy email address">Copy</button>
+          <span class="vh" id="copy-status" role="status" aria-live="polite"></span>
+        </p>
       </div>
       <ul class="routes">
         <li>
           <p class="routes__topic">Research and collaborations</p>
           <p class="routes__who">Michael Liut</p>
-          <a href="https://www.linkedin.com/in/mliut/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <svg class="ext" aria-hidden="true" focusable="false"><use href="#i-ext"/></svg></a>
+          <p class="routes__links">
+            <a href="mailto:michael@amord.ca">michael@amord.ca</a>
+            <a href="https://www.linkedin.com/in/mliut/" target="_blank" rel="noopener noreferrer">LinkedIn <svg class="ext" aria-hidden="true" focusable="false"><use href="#i-ext"/></svg></a>
+          </p>
         </li>
         <li>
           <p class="routes__topic">Partnerships and operations</p>
           <p class="routes__who">Angela Zavaleta Bernuy</p>
-          <a href="https://www.linkedin.com/in/angela-zavaleta-bernuy/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <svg class="ext" aria-hidden="true" focusable="false"><use href="#i-ext"/></svg></a>
+          <p class="routes__links">
+            <a href="mailto:angela@amord.ca">angela@amord.ca</a>
+            <a href="https://www.linkedin.com/in/angela-zavaleta-bernuy/" target="_blank" rel="noopener noreferrer">LinkedIn <svg class="ext" aria-hidden="true" focusable="false"><use href="#i-ext"/></svg></a>
+          </p>
         </li>
       </ul>
     </div>
@@ -255,6 +266,7 @@
         <span class="brand__name">AMO</span>
       </a>
       <p>Adaptive systems, AI, and data-driven models for personalization at scale.</p>
+      <a class="foot__email" href="mailto:info@amord.ca">info@amord.ca</a>
     </div>
     <nav class="foot__nav" aria-label="Footer">
       <a href="#focus">Focus</a>
@@ -262,7 +274,7 @@
       <a href="#team">Team</a>
       <a href="#contact">Contact</a>
     </nav>
-    <p class="foot__legal">© 2026 AMO Research and Development</p>
+    <p class="foot__legal">© <span id="year">2026</span> AMO Research and Development</p>
   </div>
 </footer>
 <script src="js/main.js"></script>
